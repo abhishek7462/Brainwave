@@ -1,0 +1,28 @@
+#signinButton {
+    transition-duration: 200ms;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 2.75rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, #cfbc4f, #e28765, #e46de4, #66acf1);
+    border-image-slice: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}

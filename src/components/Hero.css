@@ -1,0 +1,236 @@
+.hero-section {
+    padding-top: 12rem;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 62rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3.875rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-highlight {
+    display: inline-block;
+    position: relative;
+}
+
+.hero-curve {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: -2px;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 768px;
+    margin: 4rem auto 1.5rem auto;
+    color: rgba(202, 198, 221, 1);
+}
+
+.hero-image-container {
+    position: relative;
+    max-width: 23rem;
+    margin-bottom: 6rem;
+    margin: 0 auto;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    background: conic-gradient(#1e293b, #111827);
+    border-radius: 1rem;
+    padding: .125rem;
+    background-image: conic-gradient(from 225deg, #ffc876, #79fff7, #9f53ff, #ff98e2, #ffc876);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .hero-image-container {
+        max-width: 64rem;
+    }
+}
+
+.hero-image-background {
+    background-color: rgba(14, 12, 21, 1);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.hero-image-top-bar {
+    height: 1.4rem;
+    background-color: rgba(67, 67, 92, 1);
+    border-radius: 0.9rem 0.9rem 0 0;
+}
+
+.hero-image-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 0.9rem 0.9rem;
+    background-color: rgba(14, 12, 21, 1);
+}
+
+@media (min-width: 1024px) {
+    .hero-image-content {
+        aspect-ratio: 1024 / 490;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-image-content {
+        aspect-ratio: 688 / 490;
+    }
+}
+
+.hero-robot-image {
+    width: 100%;
+    transform: scale(1.7) translateY(8%);
+}
+
+@media (min-width: 1024px) {
+    .hero-robot-image {
+        transform: translate(0, -23%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-robot-image {
+        transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scale(1);
+    }
+}
+
+.hero-generating {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1.25rem;
+    width: 31rem;
+    margin: auto;
+}
+
+.hero-icons-list {
+    position: absolute;
+    left: -5.5rem;
+    bottom: 7.5rem;
+    padding: 0.5rem;
+    background-color: #47406066;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-color: #ffffff1a;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.hero-icon-item {
+    padding: 1.25rem;
+
+}
+
+.hero-notification {
+    position: absolute;
+    right: -5.5rem;
+    bottom: 11rem;
+    width: 18rem;
+    display: inline-block;
+
+}
+
+@media (min-width: 1280px) {
+    .hero-notification {
+        display: flex;
+        /* Visible and flex layout for xl screens */
+    }
+}
+
+.hero-background {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    width: 138%;
+    transform: translate(-50%, 0) rotate(0) skew(0, 0) scale(1, 1);
+}
+
+@media (min-width: 1024px) {
+    .hero-background {
+        top: -104%;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-background {
+        width: 138%;
+    }
+}
+
+.hero-background-image {
+    width: 100%;
+}
+
+.company-logos {
+    position: relative;
+    z-index: 10;
+    margin-top: 5rem;
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .hero-icons-list {
+        display: flex;
+    }
+
+    .hero-notification {
+        display: flex;
+    }
+}
+
+/* RobotImage.css */
+
+.hero-image-content {
+    position: relative;
+    aspect-ratio: 33 / 40;
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+    overflow: hidden;
+}
+
+.robot-image {
+    width: 100%;
+    transform: translate(0, -23%) rotate(0) skew(0) skewY(0) scaleX(1) scaleY(1);
+    height: auto;
+}
+
+@media (min-width: 768px) {
+
+    /* md breakpoint */
+    .hero-image-content {
+        aspect-ratio: 688 / 490;
+    }
+
+    .robot-image {
+        transform: scale(1) translateY(-10%);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* lg breakpoint */
+    .hero-image-content {
+        aspect-ratio: 1024 / 490;
+    }
+
+    .robot-image {
+        transform: scale(1) translateY(-23%);
+    }
+}

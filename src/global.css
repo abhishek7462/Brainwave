@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1400px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ada8c3;
+  font-family: "Sora", serif;
+  background: #0e0c15;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+
+.header-top {
+  background: #09070ee6;
+  padding: 0px 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid #252134;
+  z-index: 52;
+}
+
+.header-menu a {
+  padding: 30px 0px;
+  display: inline-block;
+  color: #ffffff80;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-top a:hover {
+  color: #fff;
+}
+
+.brainwaveLogo {
+  width: 100px;
+}
+
+a.logo {
+  padding: 0;
+  margin-right: 32px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-right a {
+  padding: 30px 0px;
+  display: inline-block;
+  color: #ffffff80;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-right a.btn.fill-btn {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 9px 30px;
+  margin-left: 25px;
+}
+
+/*********************************
+***********chat-section**********
+**********************************/
+.chat-section {
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.chat-pic img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.chat-section .row {
+  row-gap: 40px;
+}
+
+.chat-column {
+  position: relative;
+  text-align: left;
+}
+
+.chat-column:hover .chat-content {
+  background-color: rgb(14 12 21 / 85%);
+}
+
+.chat-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 38px;
+  background-color: #0e0c15;
+  transition: 0.5s;
+}
+
+.chat-content h5 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.chat-content p {
+  color: #ada8c3;
+}
+
+.flex-box {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.link-btn {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+a.link-btn:after {
+  content: "";
+  background: transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  transform: rotate(-45deg);
+  margin-left: 10px;
+}
+
+
+
+
+
+/*******************************
+**********pay-section************
+********************************/
+/* .pay-section {
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.pay-section h2 {
+  margin-bottom: 80px;
+}
+
+.pay-forever {
+  text-align: center;
+  position: relative;
+}
+
+.pay-forever img {
+  max-width: 100%;
+}
+
+.pay-forever img.center-pic {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  max-width: 255px;
+}
+
+.pay-card {
+  text-align: left;
+  border: 1px solid #252134;
+  padding: 32px 24px;
+  border-radius: 40px;
+}
+
+.price span {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.price {
+  color: #fff;
+  font-size: 40px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+} */
+
+/* 
+.pay-card li,
+.first-row li {
+  background-image: url(./image/card-tick.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 20px;
+  color: #fff;
+  padding: 20px 0px;
+  padding-left: 40px;
+  border-top: 1px solid #252134;
+} */
+
+/*******************************
+**********working****************
+********************************/
+
+
+/*******************************
+**********footer****************
+********************************/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px;
+  border-top: 1px solid #757185;
+}
+
+ul.social-iconss {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+ul.social-iconss a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #15131d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}

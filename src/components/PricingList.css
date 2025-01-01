@@ -1,0 +1,44 @@
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-4:nth-child(1) .pay-card h4 {
+    color: #ffc876;
+}
+
+.col-md-4:nth-child(2) .pay-card h4 {
+    color: #ac6aff;
+}
+
+.col-md-4:nth-child(3) .pay-card h4 {
+    color: #ff776f;
+}
+
+.pay-card p {
+    margin-bottom: 4rem;
+}
+
+.pay-card .features-list li {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-top: 1px solid #e6e6e6;
+    padding-left: 0px;
+    border-top: 1px solid #252134;
+    color: #fff;
+    height: 6rem;
+}
+
+.pay-card .features-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pay-card .features-list p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+}

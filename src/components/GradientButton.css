@@ -1,0 +1,64 @@
+.gradient-button {
+    position: relative;
+    font-family: monospace;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.gradient-button:focus {
+    outline: none;
+}
+
+.gradient-button:focus-visible::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px #22d3ee;
+}
+
+.gradient-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    background: linear-gradient(to right, #67e8f9, #cdf13e, #a855f7, #3b82f6);
+    padding: 2px;
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+    transition: opacity 0.2s;
+}
+
+.gradient-button:hover .gradient-border {
+    opacity: 0.8;
+}
+
+.button-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 6px;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+}
+
+.button-text {
+    position: relative;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.gradient-button:hover .button-text {
+    color: #a561f8;
+}
