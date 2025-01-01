@@ -1,30 +1,31 @@
 import React from "react";
-import "../global.css";
-// import Button from "./Button";
-import GradientButton from "./GradientButton";
-function Header() {
+import "../../global.css";
+import GradientButton from "../GradientButton/GradientButton";
+import { Link, NavLink } from "react-router-dom";
+
+const Navbar = () => {
   return (
     <>
       <div className="header-top">
         <div className="container-fluid">
           <div className="logo">
-            <a className="brainwaveLogo" href="#">
+            <Link className="brainwaveLogo" to="/">
               <img src="./brainwave.png" alt="Brainwave" />
-            </a>
+            </Link>
           </div>
           <div className="header-menu">
             <ul>
               <li>
-                <a href="#">Features</a>
+                <NavLink to="/">Features</NavLink>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <NavLink to="/pricing">Pricing</NavLink>
               </li>
               <li>
-                <a href="#">How to use</a>
+                <NavLink to="/howtouse">How to use</NavLink>
               </li>
               <li>
-                <a href="#">Roadmap</a>
+                <NavLink to="/roadmap">Roadmap</NavLink>
               </li>
             </ul>
           </div>
@@ -36,6 +37,6 @@ function Header() {
       </div>
     </>
   );
-}
+};
 
-export default Header;
+export default Navbar;

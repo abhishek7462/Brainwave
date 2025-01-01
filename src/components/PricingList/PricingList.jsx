@@ -1,7 +1,7 @@
 import React from "react";
-import { pricing } from "../constants";
+import { pricing } from "../../constants";
 import "./PricingList.css";
-import { check } from "../assets";
+import { check } from "../../assets";
 const PricingList = () => {
   return (
     <>

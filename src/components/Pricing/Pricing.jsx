@@ -1,11 +1,11 @@
 import React from "react";
-import { smallSphere, stars } from "../assets";
-import brackets from "../assets/svg/Brackets";
+import { smallSphere, stars } from "../../assets";
+import brackets from "../../assets/svg/Brackets";
 
 // import Heading from "./Heading";
 // import { LeftLine, RightLine } from "./design/Pricing";
 import "./Pricing.css";
-import PricingList from "./PricingList";
+import PricingList from "../PricingList/PricingList";
 
 const Pricing = () => {
   return (

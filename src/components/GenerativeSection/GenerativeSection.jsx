@@ -6,10 +6,10 @@ import {
   check,
   play,
   brainwaveWhiteSymbol,
-} from "../assets";
+} from "../../assets";
 import "./GenerativeSection.css";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
-import Search from "./Search";
+import { brainwaveServices, brainwaveServicesIcons } from "../../constants";
+import Search from "../Search/Search";
 
 const GenerativeSection = () => {
   return (

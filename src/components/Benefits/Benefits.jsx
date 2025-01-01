@@ -1,5 +1,5 @@
 import React from "react";
-import { benefits } from "../constants";
+import { benefits } from "../../constants";
 import "./benefit.css";
 
 const Benefits = () => {

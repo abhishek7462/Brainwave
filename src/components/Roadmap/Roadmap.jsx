@@ -1,8 +1,8 @@
 import React from "react";
-import brackets from "../assets/svg/Brackets";
+import brackets from "../../assets/svg/Brackets";
 import "./Roadmap.css";
-import { roadmap } from "../constants";
-import { check2, grid, loading1 } from "../assets";
+import { roadmap } from "../../constants";
+import { check2, grid, loading1 } from "../../assets";
 
 const Roadmap = () => {
   return (

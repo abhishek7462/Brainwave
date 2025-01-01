@@ -1,6 +1,6 @@
 import React from "react";
 import "./Search.css";
-import { loading } from "../assets";
+import { loading } from "../../assets";
 
 const Search = ({ className }) => {
   return (
