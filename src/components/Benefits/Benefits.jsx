@@ -20,7 +20,7 @@ const Benefits = () => {
               <div className="benefit-card-content">
                 <h5>{item.title}</h5>
                 <p>{item.text}</p>
-                <div className="footer">
+                <div className="benefit-card-footer">
                   <img
                     src={item.iconUrl}
                     width={48}

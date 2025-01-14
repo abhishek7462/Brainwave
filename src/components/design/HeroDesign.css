@@ -84,7 +84,7 @@
 
 .background-circles {
     position: absolute;
-    top: -42.375rem;
+    top: -32.375rem;
     left: 50%;
     width: 78rem;
     aspect-ratio: 1 / 1;
@@ -182,4 +182,40 @@
 .circle.unmounted {
     transform: translateY(2.5rem);
     opacity: 0;
+}
+
+.hamburger-menu {
+    color: rgba(255, 255, 255, 1);
+    padding-left: .75rem;
+    padding-right: .75rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.75rem;
+    margin-left: auto;
+}
+
+@media (min-width: 1024px) {
+
+    /* Hide on large screens (lg:hidden) */
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.03;
+    /* Equivalent to opacity-[.03] */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Equivalent to object-cover */
 }

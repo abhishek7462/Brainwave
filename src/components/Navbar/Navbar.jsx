@@ -1,9 +1,18 @@
 import React from "react";
 import "../../global.css";
+import "./Navbar.css";
 import GradientButton from "../GradientButton/GradientButton";
 import { Link, NavLink } from "react-router-dom";
+import MenuSvg from "../../assets/svg/MenuSvg";
+import { useState } from "react";
+// import { HamburgerMenu } from "../design/HeroDesign";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleButtonToggle = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <>
       <div className="header-top">
@@ -13,7 +22,7 @@ const Navbar = () => {
               <img src="./brainwave.png" alt="Brainwave" />
             </Link>
           </div>
-          <div className="header-menu">
+          <nav className={showMenu ? "menu-mobile" : "menu-web"}>
             <ul>
               <li>
                 <NavLink to="/">Features</NavLink>
@@ -28,10 +37,18 @@ const Navbar = () => {
                 <NavLink to="/roadmap">Roadmap</NavLink>
               </li>
             </ul>
-          </div>
+          </nav>
           <div className="header-right">
             <a href="#">New Account</a>
             <GradientButton>Sign in</GradientButton>
+          </div>
+          {/* <HamburgerMenu /> */}
+          <div className="ham-menu">
+            <button onClick={handleButtonToggle}>
+              <GradientButton>
+                <MenuSvg />
+              </GradientButton>
+            </button>
           </div>
         </div>
       </div>

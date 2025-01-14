@@ -3,6 +3,7 @@ import brackets from "../../assets/svg/Brackets";
 import "./Roadmap.css";
 import { roadmap } from "../../constants";
 import { check2, grid, loading1 } from "../../assets";
+import GradientButton from "../GradientButton/GradientButton";
 
 const Roadmap = () => {
   return (
@@ -74,9 +75,9 @@ const Roadmap = () => {
       </div> */}
 
           {/* </div> */}
-          <a className="btn" href="#">
-            Our roadmap
-          </a>
+          <div className="roadmapButton">
+            <GradientButton>Our Roadmap</GradientButton>
+          </div>
         </div>
       </div>
     </>

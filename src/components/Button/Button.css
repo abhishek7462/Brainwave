@@ -20,7 +20,7 @@
     text-decoration: none;
     background: transparent;
     border: 2px solid;
-    border-image-source: linear-gradient(90deg, #cfbc4f, #e28765, #e46de4, #66acf1);
+    border-image-source: linear-gradient(90deg, #e4d160, #e79577, #e982e9, #66acf1);
     border-image-slice: 1;
     overflow: hidden;
     cursor: pointer;

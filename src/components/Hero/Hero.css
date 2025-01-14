@@ -82,11 +82,6 @@
     background-color: rgba(14, 12, 21, 1);
 }
 
-@media (min-width: 1024px) {
-    .hero-image-content {
-        aspect-ratio: 1024 / 490;
-    }
-}
 
 @media (min-width: 768px) {
     .hero-image-content {
@@ -102,6 +97,10 @@
 @media (min-width: 1024px) {
     .hero-robot-image {
         transform: translate(0, -23%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    }
+
+    .hero-image-content {
+        aspect-ratio: 1024 / 490;
     }
 }
 

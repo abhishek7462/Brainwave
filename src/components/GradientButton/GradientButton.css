@@ -30,7 +30,7 @@
     position: absolute;
     inset: 0;
     border-radius: 8px;
-    background: linear-gradient(to right, #67e8f9, #cdf13e, #a855f7, #3b82f6);
+    background: linear-gradient(to right, #67e8f9, #d1e778, #b67aee);
     padding: 2px;
     clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
     transition: opacity 0.2s;

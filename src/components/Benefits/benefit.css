@@ -147,13 +147,13 @@
 }
 
 /* Footer with Explore More */
-.benefit-card .footer {
+.benefit-card .benefit-card-footer {
   display: flex;
   align-items: center;
   margin-top: auto;
 }
 
-.benefit-card .footer img {
+.benefit-card .benefit-card-footer img {
   margin-right: 10px;
 }
 

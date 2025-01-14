@@ -9,16 +9,20 @@ import GenerativeSection from "./components/GenerativeSection/GenerativeSection"
 import Pricing from "./components/Pricing/Pricing";
 import Roadmap from "./components/Roadmap/Roadmap";
 import Hero from "./components/Hero/Hero";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <Benefits />
-      <GenerativeSection />
-      <Pricing />
-      <Roadmap />
+      <div className="container">
+        <Header />
+        <Hero />
+        <Benefits />
+        <GenerativeSection />
+        <Pricing />
+        <Roadmap />
+        <Footer />
+      </div>
     </>
   );
 };
