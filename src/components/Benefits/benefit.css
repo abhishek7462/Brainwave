@@ -98,7 +98,6 @@
 .benefit-overlay {
   position: absolute;
   inset: 0.125rem;
-  /* Adjust for inset-0.5 */
   background-color: #333;
   /* Adjust for bg-n-8 */
   /* clip-path: url(#benefits); */
@@ -121,23 +120,10 @@
   object-fit: cover;
 }
 
-
-
-
-
-
-
-
-
-/* Benefits Section */
 .benefits-section {
   padding: 40px 20px;
 }
 
-
-
-
-/* Grid Layout */
 .benefits-grid {
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +132,6 @@
   margin-bottom: 2.5rem;
 }
 
-/* Footer with Explore More */
 .benefit-card .benefit-card-footer {
   display: flex;
   align-items: center;
