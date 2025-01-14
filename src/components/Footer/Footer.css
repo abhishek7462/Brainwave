@@ -1,5 +1,5 @@
 .footer {
-    padding: 5rem 1rem;
+    padding: 2rem 1rem;
     width: 100%;
 }
 
@@ -29,7 +29,7 @@
 
 .footer-socials {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -80,6 +80,6 @@
     }
 
     .footer-socials {
-        gap: 30px;
+        gap: 2rem;
     }
 }

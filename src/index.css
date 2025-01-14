@@ -7,3 +7,14 @@
 body {
     overflow-x: hidden;
 }
+
+.App-container {
+    padding-top: 1.75rem;
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .App-container {
+        padding-top: 1.25rem;
+    }
+}

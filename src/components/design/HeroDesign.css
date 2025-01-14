@@ -21,6 +21,12 @@
     border-radius: 0 0 1.25rem 1.25rem;
 }
 
+@media (max-width: 767px) {
+    .gradient-2 {
+        display: none;
+    }
+}
+
 /* BottomLine.css */
 
 .bottom-line {
