@@ -206,7 +206,7 @@ a.link-btn:after {
 /*******************************
 **********footer****************
 ********************************/
-footer {
+/* footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -228,4 +228,4 @@ ul.social-iconss a {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-}
+} */

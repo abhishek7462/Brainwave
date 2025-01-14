@@ -3,9 +3,9 @@ import { socials } from "../../constants";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <section crosses className="footer-container">
-      <div className="footer-container sm">
-        <p className="footer-caption lg">
+    <section crosses className="footer">
+      <div className="footer-container">
+        <p className="footer-caption">
           © {new Date().getFullYear()}. All rights reserved.
         </p>
 
