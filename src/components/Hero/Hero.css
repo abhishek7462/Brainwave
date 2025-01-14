@@ -1,5 +1,5 @@
 .hero-section {
-    padding-top: 12rem;
+    padding-top: 8rem;
 }
 
 .hero-container {
@@ -11,12 +11,13 @@
     z-index: 1;
     max-width: 62rem;
     margin: 0 auto;
+    padding: 0.5rem 1rem;
     text-align: center;
     margin-bottom: 3.875rem;
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .hero-description {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     max-width: 768px;
     margin: 4rem auto 1.5rem auto;
@@ -57,11 +58,56 @@
     z-index: 1;
 }
 
-@media (min-width: 768px) {
+
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .hero-image-container {
+        max-width: 25rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-icons-list,
+    .hero-notification {
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-image-container {
+        max-width: 36rem;
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .hero-image-container {
+        max-width: 50rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1136px) {
+    .hero-image-container {
+        max-width: 56rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width: 1137px) {
+    .hero-image-container {
+        max-width: 64rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* @media (min-width: 768px) {
     .hero-image-container {
         max-width: 64rem;
     }
-}
+} */
 
 .hero-image-background {
     background-color: rgba(14, 12, 21, 1);
@@ -80,14 +126,9 @@
     overflow: hidden;
     border-radius: 0 0 0.9rem 0.9rem;
     background-color: rgba(14, 12, 21, 1);
+    aspect-ratio: 688 / 490;
 }
 
-
-@media (min-width: 768px) {
-    .hero-image-content {
-        aspect-ratio: 688 / 490;
-    }
-}
 
 .hero-robot-image {
     width: 100%;
@@ -110,14 +151,7 @@
     }
 }
 
-.hero-generating {
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    bottom: 1.25rem;
-    width: 31rem;
-    margin: auto;
-}
+
 
 .hero-icons-list {
     position: absolute;
@@ -165,11 +199,40 @@
     .hero-background {
         top: -104%;
     }
+
 }
 
 @media (min-width: 768px) {
     .hero-background {
         width: 138%;
+    }
+
+}
+
+
+@media (min-width: 724px) and (max-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        padding: 0rem 1rem;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-section {
+        padding-top: 10rem;
+    }
+
+    .hero-title {
+        font-size: 4rem;
     }
 }
 
@@ -177,12 +240,6 @@
     width: 100%;
 }
 
-.company-logos {
-    position: relative;
-    z-index: 10;
-    margin-top: 5rem;
-    display: none;
-}
 
 @media (min-width: 1024px) {
     .hero-icons-list {
@@ -194,11 +251,11 @@
     }
 }
 
-/* RobotImage.css */
+/* RobotImage css */
 
 .hero-image-content {
     position: relative;
-    aspect-ratio: 33 / 40;
+    aspect-ratio: 688 / 490;
     border-bottom-left-radius: 0.9rem;
     border-bottom-right-radius: 0.9rem;
     overflow: hidden;

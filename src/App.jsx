@@ -14,15 +14,15 @@ import Footer from "./components/Footer/Footer.jsx";
 const App = () => {
   return (
     <>
-      {/* <div className="container"> */}
-      <Header />
-      <Hero />
-      <Benefits />
-      <GenerativeSection />
-      <Pricing />
-      <Roadmap />
-      <Footer />
-      {/* </div> */}
+      <div className="App-container">
+        <Header />
+        <Hero />
+        <Benefits />
+        <GenerativeSection />
+        <Pricing />
+        <Roadmap />
+        <Footer />
+      </div>
     </>
   );
 };

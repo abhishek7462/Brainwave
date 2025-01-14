@@ -1,6 +1,7 @@
 import React from "react";
 import { benefits } from "../../constants";
 import "./benefit.css";
+import Arrow from "../../assets/svg/Arrow";
 
 const Benefits = () => {
   return (
@@ -28,6 +29,9 @@ const Benefits = () => {
                     alt={item.title}
                   />
                   <span className="explore-more">Explore more</span>
+                  <span className="arrow">
+                    <Arrow />
+                  </span>
                 </div>
               </div>
 
