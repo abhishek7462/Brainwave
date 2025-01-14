@@ -7,6 +7,7 @@ import Notification from "../Notification/Notification";
 import CompanyLogos from "../ComapanyLogos/CompanyLogos";
 import "./Hero.css";
 import Search from "../Search/Search";
+import GradientButton from "../GradientButton/GradientButton";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -38,7 +39,7 @@ const Hero = () => {
             Unleash the power of AI within Brainwave. Upgrade your productivity
             with Brainwave, the open AI chat app.
           </p>
-          <button href="/pricing">Get started</button>
+          <GradientButton>Get Started</GradientButton>
         </div>
         <div className="hero-image-container">
           <div className="hero-image-wrapper">

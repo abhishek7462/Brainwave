@@ -1,0 +1,67 @@
+/* Footer Container */
+.footer {
+    padding: 10rem 2rem;
+}
+
+/* Inner Container */
+.footer-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-container.sm {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Caption Text */
+.footer-caption {
+    font-size: 14px;
+    /* Adjust to match Tailwind's caption size */
+    color: #9ca3af;
+    /* Replace with your desired color for text-n-4 */
+    display: none;
+}
+
+.footer-caption.lg {
+    display: block;
+}
+
+/* Social Media List */
+.footer-socials {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Social Media Links */
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    /* 10 Tailwind spacing units */
+    height: 40px;
+    background-color: rgba(21, 19, 29, 1);
+    /* Replace with bg-n-7 equivalent */
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.footer-social-link:hover {
+    background-color: #363d4a;
+    /* Replace with hover:bg-n-6 equivalent */
+}
+
+/* Social Media Icons */
+.footer-social-icon {
+    width: 16px;
+    height: 16px;
+}

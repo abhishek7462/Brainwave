@@ -1,0 +1,197 @@
+.header-top {
+    background: #09070ee6;
+    padding: 0px 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #252134;
+    z-index: 52;
+}
+
+.header-top .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+.brainwaveLogo {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 30px 0px;
+    display: inline-block;
+    color: #ffffff80;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-top a:hover {
+    color: #fff;
+}
+
+a.logo {
+    padding: 0;
+    margin-right: 32px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* Enable wrapping for smaller screens */
+}
+
+.header-right a {
+    padding: 30px 0px;
+    display: inline-block;
+    color: #ffffff80;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-right a.btn.fill-btn {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 9px 30px;
+    margin-left: 25px;
+}
+
+@media (min-width: 1036px) {
+    nav ul {
+        gap: 4rem;
+    }
+
+
+    .brainwaveLogo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .header-top {
+        padding: 0px 20px;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .brainwaveLogo {
+        width: 90px;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+
+    .header-right a.btn.fill-btn {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-top {
+        padding: 0px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 10px 0px;
+    }
+
+    .brainwaveLogo {
+        width: 70px;
+    }
+
+    .header-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-right a {
+        font-size: 10px;
+    }
+
+    .header-right a.btn.fill-btn {
+        padding: 7px 15px;
+        margin-left: 0;
+    }
+}
+
+.ham-menu {
+    display: none;
+}
+
+.ham-menu button {
+    background: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 998px) {
+    .menu-web {
+        display: none;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .header-top .container-fluid {
+        padding: 20px 10px;
+    }
+
+    .ham-menu {
+        display: inline-block;
+        background: transparent;
+        text-align: end;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        background-color: #09070ee6;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & li:first-child {
+            margin-top: 1.2rem;
+        }
+
+        & li:last-child {
+            margin-bottom: 1.2rem;
+        }
+    }
+}

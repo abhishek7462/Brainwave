@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MouseParallax } from "react-just-parallax";
 import PlusSvg from "../../assets/svg/PlusSvg";
 import "./HeroDesign.css";
+// import { background } from "../../assets";
 
 export const Gradient = () => {
   return (
@@ -88,3 +89,25 @@ export const BackgroundCircles = ({ parallaxRef }) => {
     </div>
   );
 };
+
+// export const HamburgerMenu = () => {
+//   return (
+//     <div className="hamburger-menu">
+//       <div className="background-overlay">
+//         <img
+//           className="background-image"
+//           src={background}
+//           width={688}
+//           height={953}
+//           alt="Background"
+//         />
+//       </div>
+
+//       <Rings />
+
+//       <SideLines />
+
+//       <BackgroundCircles />
+//     </div>
+//   );
+// };
